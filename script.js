@@ -10,6 +10,7 @@ let Numbers = document.querySelector("#Numbers");
 let Symbols = document.querySelector("#Symbols");
 let genBtn = document.querySelector(".genBtn");
 let container = document.querySelector(".container");
+let copyIcon = document.querySelector(".copyIcon");
 
 //show input slider value
 
@@ -36,7 +37,7 @@ function generatePassword() {
   FinalPassword += Symbols.checked ? symbols : "";
 
   if (FinalPassword == "" || FinalPassword.length == 0) {
-    return genPassword;
+    return "";
   }
   for (let i = 1; i <= inputSlider.value; i++) {
     Password += FinalPassword.charAt(
@@ -45,3 +46,16 @@ function generatePassword() {
   }
   return Password;
 }
+
+copyIcon.addEventListener("click", () => {
+  if (passBox.value != "" || passBox.value.length >= 1) {
+    navigator.clipboard.writeText(passBox.value);
+    copyIcon.innerHTML = "check";
+    copyIcon.title = "password copied";
+
+    setTimeout(() => {
+      copyIcon.innerHTML = "content_copy";
+      copyIcon.title = "";
+    }, 3000);
+  }
+});
