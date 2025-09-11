@@ -6,7 +6,7 @@ It allows users to generate secure passwords by choosing length and including lo
 ---
 
 ## 🔗 Live Demo
-[View Live Project](https://aryanbhardwaj4224.github.io/Analog-Clock-/)
+[View Live Project](https://aryanbhardwaj4224.github.io/Password-Generator/)
 
 ---
 ## 🔑 Features
@@ -65,4 +65,5 @@ password-generator/
 - Dark/light mode toggle
 
 - Save generated passwords to local storage
+
 
