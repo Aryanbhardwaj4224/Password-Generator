@@ -5,6 +5,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Password Generator | JavaScript Project</title>
     <link rel="stylesheet" href="style.css" />
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
   </head>
 
   <body>
@@ -12,7 +16,8 @@
       <h1>Password Generator</h1>
 
       <div class="inputBox">
-        <input  type="text" class="passBox" disabled />
+        <input type="text" class="passBox" disabled />
+         <span class="material-icons copyIcon" >content_copy</span>
       </div>
 
       <input class="inputSlider" type="range" min="6" max="30" value="8" />
@@ -24,26 +29,24 @@
 
       <div class="row">
         <label for="lowercase">Include LowerCase Letters (a-z)</label>
-        <input type="checkbox" name="lowercase" id="lowercase" />
+        <input type="checkbox" name="lowercase" id="lowercase" checked/>
       </div>
 
       <div class="row">
         <label for=" UpperCase">Include UpperCase Letters (A-z)</label>
-        <input type="checkbox" name=" UpperCase" id="UpperCase" />
-
+        <input type="checkbox" name=" UpperCase" id="UpperCase" checked/>
       </div>
-       <div class="row">
+      <div class="row">
         <label for="Numbers">Numbers (0-9)</label>
-        <input type="checkbox" name="Numbers" id="Numbers" />
+        <input type="checkbox" name="Numbers" id="Numbers" checked/>
       </div>
 
-       <div class="row">
+      <div class="row">
         <label for="Symbols">Symbols (! - *)</label>
-        <input type="checkbox" name="Symbols" id="Symbols" />
+        <input type="checkbox" name="Symbols" id="Symbols" checked/>
       </div>
 
       <button class="genBtn" type="button">Generate Password</button>
-
     </div>
     <script src="script.js"></script>
   </body>

@@ -31,6 +31,21 @@ body {
   font-size: 1.4rem;
   margin-block: 8px;
 }
+.inputBox {
+  position: relative;
+}
+.inputBox span {
+  position: absolute;
+  top: 16px;
+  right: 6px;
+  color: #193e3f;
+  cursor: pointer;
+  font-size: 28px;
+  z-index: 2;
+}
+.inputBox span:hover {
+  color: #0ae8f0;
+}
 .passBox {
   background-color: #fff;
   border: none;
@@ -40,6 +55,7 @@ body {
   border-radius: 4px;
   font-size: 20px;
   margin-block: 8px;
+  text-overflow: ellipsis;
 }
 input[type="range"] {
   accent-color: #00f5ff;
@@ -73,6 +89,6 @@ input[type="checkbox"] {
   cursor: pointer;
   border-radius: 4px;
 }
-.genBtn:hover{
-    background: #19868a;
+.genBtn:hover {
+  background: #19868a;
 }
