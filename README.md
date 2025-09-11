@@ -5,6 +5,10 @@ It allows users to generate secure passwords by choosing length and including lo
 
 ---
 
+## 🔗 Live Demo
+[View Live Project](https://aryanbhardwaj4224.github.io/Analog-Clock-/)
+
+---
 ## 🔑 Features
 - Adjustable password length (6–30 characters)
 - Option to include/exclude:
@@ -61,3 +65,4 @@ password-generator/
 - Dark/light mode toggle
 
 - Save generated passwords to local storage
+
